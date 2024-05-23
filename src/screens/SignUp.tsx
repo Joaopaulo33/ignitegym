@@ -12,7 +12,7 @@ export function SignUp() {
       contentContainerStyle={{ flexGrow: 1 }}
       showsVerticalScrollIndicator={false}
     >
-      <VStack flex={1} bg="gray.700" px={10} pb={16}>
+      <VStack flex={1} px={10} pb={16}>
         <Image
           source={BackgroundImg}
           alt="Pessoas treinando"
@@ -30,8 +30,10 @@ export function SignUp() {
 
         <Center>
           <Heading color="gray.100" fontSize="xl" mb={6} fontFamily="heading">
-            Acesse a conta
+            Crie sua conta
           </Heading>
+
+          <Input placeholder="Nome" />
 
           <Input
             placeholder="E-mail"
@@ -40,16 +42,10 @@ export function SignUp() {
           />
           <Input placeholder="Senha" secureTextEntry />
 
-          <Button title="Acessar" />
+          <Button title="Criar e acessar" />
         </Center>
 
-        <Center mt={24}>
-          <Text color="gray.100" fontSize="sm" mb={3} fontFamily="body">
-            Ainda não tem acesso?
-          </Text>
-        </Center>
-
-        <Button title="Criar Conta" variant="outline" />
+        <Button title="Voltar para o login" variant="outline" mt={24} />
       </VStack>
     </ScrollView>
   );
