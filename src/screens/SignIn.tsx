@@ -27,6 +27,7 @@ export function SignIn() {
           defaultSource={BackgroundImg}
           alt="Pessoas treinando"
           resizeMode="contain"
+          alignSelf='center'
           position="absolute"
         />
 
